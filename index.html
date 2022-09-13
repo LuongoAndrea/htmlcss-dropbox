@@ -4,10 +4,305 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
     <title>Archivia, condividi, collabora e molto altro con Dropbox</title>
 </head>
 <body>
+    <!-- inizio header  -->
+    <header>
+        <!-- nav 100% width - 80px height --> 
+        <nav class="flex">
+            <!-- primo ul con immagine e link  -->
+            <ul>
+                <li><a href="./index.html"><img src="./img/logo-small.png" alt="logo dropbox"></a></li>
+                <li><a href="#">Perch&egrave; Dropbox</a></li>
+                <li><a href="#">Funzioni</a></li>
+                <li><a href="#">Piani e Prezzi</a></li>
+            </ul>
+            <!-- secondo ul link e bottone "inizia" -->
+            <ul>
+                <li><a href="#">Supporto</a></li>
+                <li><a href="#">Contatta L'ufficio vendite</a></li>
+                <li><a href="#">Accedi</a></li>
+                <li><a href="#"><button class="button btn">Inizia</button></a></li>
+            </ul>
+        </nav>
+        <!-- hero .container con titolo e p pulsante span con flex a fianco immagine jumbo  -->
+        <div class="hero container">
+            <!-- titolo -->
+            <h1>Tutto ci&ograve; che ti serve per il lavoro, in un unico posto</h1>
+            <!-- sezione con flex -->
+            <section>
+                <div>
+                    <p>Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Bisnes &egrave; pi&ugrave; di uno spazio di archiviazione sicuro: &egrave; un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.</p>
+                    <a href="#"><button>Inizia la tua prova gratuita</button></a>
+                    <span>Annulla in qualsiasi momento</span>
+                    <!-- freccia verso il basso -->
+                    <span><i class="fa-solid fa-arrow-down"></i></span>
+                </div>
+                <!-- immagine jumbo -->
+                <img src="./img/jumbo.png" alt="">
+            </section>
+        </div>
+    </header>
+    <!-- inizio main -->
+    <main>
+        <!-- prima sezione con .container-small  -->
+        <section id="sec1" class="container-small">
+            <!-- sotto titolo -->
+            <h2>Trova il business che fa per te</h2>
+            <!-- div form radio button -->
+            <div>
+                <form action="/action_page.php">
+                    <input type="radio" checked="checked" id="mensile" name="fatturazione" value="mensile">
+                    <span class="checkmark"></span>
+                    <label for="mensile">Fatturazione mensile</label>
+                    <input type="radio" id="annuale" name="fatturazione" value="annuale">
+                    <span class="checkmark"></span>
+                    <label for="annuale">Fatturazione annuale</label>
+                </form>
+            </div>
+            <!-- div contenente 3 tipi di piano a pagamento -->
+            <div class="flex">
+                <!-- singolo -->
+                <div class="cards">
+                    <!-- titolo della card icon e span -->
+                    <div class="card-head">
+                        <span><i class="fa-solid fa-user"></i></span>
+                        <span>Singolo</span>
+                    </div>
+                    <!-- corpo della card -->
+                    <div class="card-body">
+                        <!-- tipo di piano -->
+                        <div class="specifiche">
+                            <h3>Professional</h3>
+                            <!-- prezzo -->
+                            <div><strong>&euro; 12.00</strong></div>
+                            <!-- tipo di pagamento -->
+                            <div>/mese</div>
+                        </div>
+                        
+                        <!-- 3 div contenente specifiche card  -->
+                        <div class="specifiche">
+                            <div class="flexcard">
+                                <!-- quanti utenti  -->
+                                <span><i class="fa-solid fa-user"></i></span>
+                                <div>1 utente</div>
+                            </div>
     
+                            <div class="flexcard">
+                                <!-- quantità spazio  -->
+                                <span><i class="fa-solid fa-folder"></i></span>
+                                <div>5 TB di spazio di archiviazione sicuro</div>
+                            </div>
+                            <div class="flexcard">
+                                <!-- condivisione -->
+                                <span><i class="fa-solid fa-share-nodes"></i></span>
+                                <div>Funzioni di produttivit&agrave; premium e condivisione file semplice e sicura</div>
+                            </div>
+                        </div>
+                        
+                        <!-- pulsante prova gratis -->
+                        <a href="#"><button class="button btn">Prova gratis per 30 giorni</button></a><br>
+                        <!-- ancora acquista ora -->
+                        <div class="acquista">
+                            <span>Oppure </span>
+                            <a href="#">acquista ora</a>
+                        </div>
+                        
+                        <!-- hr width 30px -->
+                        <hr>
+                        <!-- ul specifiche tecniche -->
+                        <ul><strong>Punti salienti del piano</strong>
+                            <!-- li spunta blu con div affiancati con flex -->
+                            <li>
+                                <div>
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <div>
+                                    Invia un file fino a 100 GB con Dropbox Transfert
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+                                <div>
+                                    Cartelle offline su displositivi mobili
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <!-- team -->
+                <div class="cards">
+                    <div class="card-head">
+                        <span><i class="fa-solid fa-users"></i></span>
+                        <span>Team</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Advanced</h3>
+                        <span><strong>&euro; 18.00</strong></span>
+                        <span>/utente/mese</span>
+                        <div>
+                            <span><i class="fa-solid fa-users"></i></span>
+                            <span>3 o pi&ugrave; utenti</span>
+                        </div>
+                        <div>
+                            <span><i class="fa-solid fa-folder"></i></span>
+                            <div>Tutto lo spazio di cui ha bisogno il tuo team</div>
+                        </div>
+                        <div>
+                            <span><i class="fa-solid fa-share-nodes"></i></span>
+                            <div>Sofisticate funzioni di controllo e per tenere al sicuro tutti i file del tuo team</div>
+                        </div>
+                        <a href="#"><button class="button btn">Prova gratis per 30 giorni</button></a><br>
+                        <span>Oppure </span>
+                        <a href="#">acquista ora</a>
+                        <hr>
+                        <ul><strong>Punti salienti del piano</strong>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <div>
+                                    Invia un file fino a 100 GB con Dropbox Transfert
+                                </div> 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <div>
+                                    Cartelle offline su displositivi mobili
+                                </div> 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- azienda -->
+                <div class="cards">
+                    <div class="card-head">
+                        <span><i class="fa-solid fa-building"></i></span>
+                        <span>Azienda</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>Enterprise</h3>
+                        <span><strong>Contattaci</strong></span>
+                        <span>-</span>
+                        <div>
+                            <span><i class="fa-solid fa-building"></i></span>
+                            <span>10 o pi&ugrave; utenti</span>
+                        </div>
+                        <div>
+                            <span><i class="fa-solid fa-folder"></i></span>
+                            <div>Soluzioni personalizzabili per la tua azienda</div>
+                        </div>
+                        <div>
+                            <span><i class="fa-solid fa-share-nodes"></i></span>
+                            <div>Assistenza personalizzata per aiutare gli amministratori in una gestione su larga scalas</div>
+                        </div>
+                        <a href="#"><button class="button btn">Prova gratis per 30 giorni</button></a><br>
+                        <span>Oppure </span>
+                        <a href="#">acquista ora</a>
+                        <hr>
+                        <ul><strong>Punti salienti del piano</strong>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <div>
+                                    Invia un file fino a 100 GB con Dropbox Transfert
+                                </div> 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <div>
+                                    Cartelle offline su displositivi mobili
+                                </div> 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="finale">
+                <div class="card-head">
+                    <span><i class="fa-solid fa-building"></i></span>
+                    <span>Team</span>
+                </div>
+                <div class="card-body">
+                    <h3>Enterprise</h3>
+                    <span><strong>Contatta l'ufficio vendite per i prezzi</strong></span>
+                    <p>Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT su qualsiasi scala</p>
+                    <a href="#"><button class="button btn">Contatta l'ufficio vendite</button></a>
+                </div>
+            </div>
+        </section>
+        <!-- seconda section con container-small -->
+        <section id="sec2" class="container-small flex">
+            <img src="./img/partner.png" alt="">
+            <div>
+                <h3>Entra in contatto con un partner Dropbox</h3>
+                <p>Trova un partner Dropbox e HelloSign di fiducia. Ottieni le soluzioni e i servizzi necessari per raggiungere i tuoi obbiettivi aziendali, tra cui implementazione, integrazione, gestione e supporto continui.</p>
+                <a href="#"><button class="button btn">Trova un partner</button></a>
+            </div>
+        </section>
+        <section id="sec3" class="container-small flex">
+
+            <article>
+                <img src="./img/business-feature-switching-tools.png" alt="">
+                <h3>Passa di meno da uno strumento all'altro</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio doloribus rerum deserunt voluptatum distinctio rem odit eligendi aliquam voluptatibus aspernatur quisquam, tempora, sequi delectus quibusdam perferendis aut neque explicabo reiciendis. Accusamus, in? Necessitatibus, ad sit. Aut vitae, commodi cum deserunt in quaerat sit a labore odio veniam qui atque magnam?</p>
+            </article>
+            <article>
+                <img src="./img/business-feature-switching-tools.png" alt="">
+                <h3>Passa di meno da uno strumento all'altro</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio doloribus rerum deserunt voluptatum distinctio rem odit eligendi aliquam voluptatibus aspernatur quisquam, tempora, sequi delectus quibusdam perferendis aut neque explicabo reiciendis. Accusamus, in? Necessitatibus, ad sit. Aut vitae, commodi cum deserunt in quaerat sit a labore odio veniam qui atque magnam?</p>
+            </article>
+            <article>
+                <img src="./img/business-feature-switching-tools.png" alt="">
+                <h3>Passa di meno da uno strumento all'altro</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio doloribus rerum deserunt voluptatum distinctio rem odit eligendi aliquam voluptatibus aspernatur quisquam, tempora, sequi delectus quibusdam perferendis aut neque explicabo reiciendis. Accusamus, in? Necessitatibus, ad sit. Aut vitae, commodi cum deserunt in quaerat sit a labore odio veniam qui atque magnam?</p>
+            </article>
+            <article>
+                <img src="./img/business-feature-switching-tools.png" alt="">
+                <h3>Passa di meno da uno strumento all'altro</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio doloribus rerum deserunt voluptatum distinctio rem odit eligendi aliquam voluptatibus aspernatur quisquam, tempora, sequi delectus quibusdam perferendis aut neque explicabo reiciendis. Accusamus, in? Necessitatibus, ad sit. Aut vitae, commodi cum deserunt in quaerat sit a labore odio veniam qui atque magnam?</p>
+            </article>
+            <article>
+                <img src="./img/business-feature-switching-tools.png" alt="">
+                <h3>Passa di meno da uno strumento all'altro</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio doloribus rerum deserunt voluptatum distinctio rem odit eligendi aliquam voluptatibus aspernatur quisquam, tempora, sequi delectus quibusdam perferendis aut neque explicabo reiciendis. Accusamus, in? Necessitatibus, ad sit. Aut vitae, commodi cum deserunt in quaerat sit a labore odio veniam qui atque magnam?</p>
+            </article>
+            <article>
+                <img src="./img/business-feature-switching-tools.png" alt="">
+                <h3>Passa di meno da uno strumento all'altro</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio doloribus rerum deserunt voluptatum distinctio rem odit eligendi aliquam voluptatibus aspernatur quisquam, tempora, sequi delectus quibusdam perferendis aut neque explicabo reiciendis. Accusamus, in? Necessitatibus, ad sit. Aut vitae, commodi cum deserunt in quaerat sit a labore odio veniam qui atque magnam?</p>
+            </article>
+            <div>
+                <h2>Pi&ugrave; di 500.000 team utilizzano<br>Dropbox Business</h2>
+                <a href="#">Scopri di pi&ugrave; sui nostri clienti</a>
+            </div>
+        </section>
+        <section id="sec4">
+            <div class="width">
+                <div class="membri"><img src="./img/designit.svg" alt=""></div>
+                <div class="membri"><img src="./img/arizona_state_university.svg" alt=""></div>
+                <div class="membri"><img src="./img/university_of_florida.svg" alt=""></div>
+                <div class="membri"><img src="./img/topps.svg" alt=""></div>
+            </div>
+            <div class="centrale">
+                <img src="./img/designit.svg" alt="">
+                <p></p>
+                <span></span>
+            </div>
+            <div class="width">
+                <div class="membri"><img src="./img/world_bicycle_relief.svg" alt=""></div>
+                <div class="membri"><img src="./img/hearst_corp.svg" alt=""></div>
+                <div class="membri"><img src="./img/lonely_planet.svg" alt=""></div>
+                <div class="membri"><img src="./img/clear_channel.svg" alt=""></div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+
+    </footer>
 </body>
 </html>
