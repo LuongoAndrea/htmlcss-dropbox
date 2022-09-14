@@ -41,7 +41,7 @@ li{
     list-style: none;
 }
 h3{
-    font-size: 25px;
+    font-size: 20px;
 }
 /* Bottoni */
 button{
@@ -245,9 +245,11 @@ section#sec3 div a{
 section#sec4{
     margin-top: 50px;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 section#sec4 div.width{
-    width: calc(100vw / 3);
+    width: calc(100% / 3);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -292,7 +294,9 @@ section#sec4 div.width div.membri:nth-child(8){
 }
 div.centrale{
     flex-direction: column;
-    overflow-y: scroll;
+    justify-content: flex-start;
+    width: calc(100% / 3);
+    overflow: scroll;
 }
 div.centrale hr{
     margin: 40px 40px;
@@ -309,6 +313,43 @@ div.centrale *{
     color: black;
     border: 1px solid black;
 }
-#sec5 div.flex *{
-    margin: 100px 0;
+#sec5 div.flex{
+    padding: 100px 0;
+}
+#sec5 div.flex button{
+    position: relative;
+    top: 10px;
+    left: 0;
+}
+section#sec6{
+    padding: 100px 0;
+}
+section#sec6 h2{
+    padding-bottom: 30px;
+}
+section#sec6 h4{
+    font-size: 18px;
+}
+section#sec6 div{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 30px 0;
+    position: relative;
+}
+section#sec6 div a{
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    transform: rotate(180deg);
+    transition: transform 0.5s;
+}
+section#sec6 div p{
+    display: none;
+}
+section#sec6 div:hover p{
+    display: block;
+    margin-top: 30px;
+}
+section#sec6 div:hover a{
+    transform: rotate(0deg);
 }
