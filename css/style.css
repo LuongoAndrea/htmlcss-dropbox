@@ -52,7 +52,7 @@ button{
     cursor: pointer;
 }
 .btn{
-    text-align: center;
+    /* text-align: center; */
     padding: 10px 30px;
 }
 
@@ -243,23 +243,28 @@ section#sec3 div a{
     color: var(--color-btn);
 }
 section#sec4{
-    display: flex;
-    justify-content: space-between;
-    height: 600px;
+    margin-top: 50px;
+    width: 100%;
 }
 section#sec4 div.width{
-    width: calc(100% / 3);
+    width: calc(100vw / 3);
     display: flex;
     flex-wrap: wrap;
-}
-section#sec4 div.centrale{
+    justify-content: space-between;
 }
 section#sec4 div.width div.membri{
-    width: 300px;
-    height: 300px;
+    width: 50%;
+    height: 16vw;
+    position: relative;
+    border: 1px solid black;
 }
 section#sec4 div.width div.membri img{
-    width: 150px;
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: invert(1);
 }
 section#sec4 div.width div.membri:nth-child(1){
     background-color: #A2D39B;
@@ -284,4 +289,26 @@ section#sec4 div.width div.membri:nth-child(7){
 }
 section#sec4 div.width div.membri:nth-child(8){
     background-color: #FFD830;
+}
+div.centrale{
+    flex-direction: column;
+    overflow-y: scroll;
+}
+div.centrale hr{
+    margin: 40px 40px;
+    width: 80px;
+}
+div.centrale *{
+    padding-left: 20px;
+}
+#sec5 .blue{
+    background-color: #B4D0E7;
+}
+#sec5 button{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+#sec5 div.flex *{
+    margin: 100px 0;
 }
