@@ -43,6 +43,10 @@ li{
 h3{
     font-size: 20px;
 }
+
+h4{
+    font-size: 18px;
+}
 /* Bottoni */
 button{
     padding: 10px;
@@ -105,7 +109,9 @@ h1{
 .hero section img{
     width: 800px;
 }
-
+.hero a{
+    color: black;
+}
 /* inizio main  */
 main{
     margin-top: 150px;
@@ -327,9 +333,6 @@ section#sec6{
 section#sec6 h2{
     padding-bottom: 30px;
 }
-section#sec6 h4{
-    font-size: 18px;
-}
 section#sec6 div{
     border-top: 1px solid black;
     border-bottom: 1px solid black;
@@ -352,4 +355,48 @@ section#sec6 div:hover p{
 }
 section#sec6 div:hover a{
     transform: rotate(0deg);
+}
+footer{
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+footer div section:first-of-type{
+    display: flex;
+    justify-content: space-between;
+}
+footer div section{
+    padding: 50px 0;
+}
+footer div section a{
+    color: white;
+}
+footer div section h4{
+    padding-bottom: 30px;
+}
+footer div section li{
+    padding-bottom: 15px;
+}
+footer hr{
+    width: 100px;
+}
+footer div:last-of-type{
+    position: relative;
+}
+.linguages{
+    display: none;
+}
+div.linguage:hover .linguages{
+    display: block;
+    background-color: #B4D0E7;
+    padding: 20px;
+    width: 110px;
+    text-align: center;
+    border-radius: 10px 10px 10px 0;
+    position: absolute;
+    bottom: 10px;
+    left: 100px;
+}
+footer .linguages a{
+    color: black;
 }
